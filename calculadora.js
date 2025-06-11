@@ -28,7 +28,7 @@ if (isNaN(numero1) || isNaN(numero2)){
     console.log('Número digitado invalido, tente novamente!')
 } else {
 //calculo da operação desejada
-if (operacao === '1'){
+ if (operacao === '1'){
     resultado = (numero1 + numero2);
     console.log('O resultado da soma eh: ', resultado);
 }else if (operacao === '2'){
