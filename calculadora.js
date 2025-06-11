@@ -15,8 +15,6 @@ console.log()
 
 //Solicita a operação desejada
 console.log('Escolha a operacao desejada: ', operacao)
-if (operacao !==1,2,3,4)
-    console.log('O número digitado e invalido')
 console.log()
 
 //solicitação dos valores
@@ -26,11 +24,11 @@ console.log()
 
 let resultado
 
-else if (isNaN(numero1) || isNaN(numero2))
-    console.log('Número digitado invalido')
-    
+if (isNaN(numero1) || isNaN(numero2)){
+    console.log('Número digitado invalido, tente novamente!')
+} else {
 //calculo da operação desejada
-else if(operacao === '1'){
+if (operacao === '1'){
     resultado = (numero1 + numero2);
     console.log('O resultado da soma eh: ', resultado);
 }else if (operacao === '2'){
@@ -39,13 +37,14 @@ else if(operacao === '1'){
 }else if(operacao === '3'){
     resultado = (numero1 * numero2);
     console.log('O resultado da mutiplicação eh: ', resultado);
-}else if(operacao === '4'){
+}else if (operacao === '4'){
     if ( numero2 !== 0){
-        resultado = (numero1/numero2)
-                console.log('O resultado da divisão eh: ', resultado)
-
-    }
-    else{
         console.log('Não é possível dividir por zero')
+    }else{
+        resultado = numero1/numero2;
+                console.log('O resultado da divisão eh: ', resultado)
+            }
+    } else {
+        console.log('ERRO! Operação invalida.');
     }
 }
