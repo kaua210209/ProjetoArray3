@@ -16,7 +16,6 @@ while (tentativas < 3) {
         console.log()
         for (let i = 0; i <= 10; i++) {
             console.log(numero + ' * ' + i + ' = ' + (numero * i));
-            console.log()
         }
         break; // Sai do loop quando a senha estiver correta
     } else {
