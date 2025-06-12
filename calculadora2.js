@@ -50,6 +50,6 @@ case '4':
             }
             break;
     default:
-        console.log('ERRO! Operação invalida.');
+        console.log('ERRO! Operação invalida. \n');
     }
 }
